@@ -19,8 +19,8 @@
   --text-muted-d:  #5a5a5a;
   --text-l:        #111111;
   --text-muted-l:  #888;
-  --accent:        #c9a96e;
-  --accent-dim:    rgba(201,169,110,0.12);
+  --accent:        #7d9e7e;
+  --accent-dim:    rgba(125,158,126,0.12);
   --border-d:      rgba(255,255,255,0.07);
   --border-l:      rgba(0,0,0,0.08);
 
@@ -124,7 +124,7 @@ a { text-decoration: none; }
 }
 
 .btn--primary:hover {
-  background: #d4b87a;
+  background: #8fad90;
   transform: translateY(-1px);
 }
 
