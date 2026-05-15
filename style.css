@@ -624,7 +624,14 @@ a { text-decoration: none; }
 }
 
 .case-img-slot {
+  overflow: hidden;
+}
+
+.case-img-slot img {
+  display: block;
+  width: 100%;
   aspect-ratio: 1240 / 1550;
+  object-fit: cover;
 }
 
 .case-img-slot .img-placeholder {
@@ -1066,7 +1073,7 @@ a { text-decoration: none; }
     direction: ltr;
   }
 
-  .case-img-slot {
+  .case-img-slot img {
     aspect-ratio: 1240 / 1550;
   }
 
@@ -1172,7 +1179,7 @@ a { text-decoration: none; }
     padding: 32px 24px;
   }
 
-  .case-img-slot {
+  .case-img-slot img {
     aspect-ratio: 1240 / 1550;
   }
 
