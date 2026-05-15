@@ -624,7 +624,7 @@ a { text-decoration: none; }
 }
 
 .case-img-slot {
-  min-height: 520px;
+  aspect-ratio: 1240 / 1550;
 }
 
 .case-img-slot .img-placeholder {
@@ -1067,7 +1067,7 @@ a { text-decoration: none; }
   }
 
   .case-img-slot {
-    min-height: 360px;
+    aspect-ratio: 1240 / 1550;
   }
 
   .case-study-content {
@@ -1173,7 +1173,7 @@ a { text-decoration: none; }
   }
 
   .case-img-slot {
-    min-height: 280px;
+    aspect-ratio: 1240 / 1550;
   }
 
   .case-study-content {
