@@ -615,6 +615,10 @@ a { text-decoration: none; }
   direction: rtl;
 }
 
+.case-study-visual--img-wide {
+  grid-template-columns: 2fr 3fr;
+}
+
 .case-study-visual--reverse > * {
   direction: ltr;
 }
@@ -721,6 +725,16 @@ a { text-decoration: none; }
   color: var(--accent);
   display: block;
   line-height: 1.2;
+}
+
+.case-stat--arrow {
+  justify-content: center;
+}
+
+.case-stat--arrow .case-stat-value {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
 /* ────────────────────────────────
@@ -935,6 +949,95 @@ a { text-decoration: none; }
 .stat:nth-child(6) { transition-delay: 0.40s; }
 
 /* ────────────────────────────────
+   JETS
+──────────────────────────────── */
+.jets-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: end;
+  margin-bottom: 64px;
+}
+
+.jets-title {
+  font-family: var(--serif);
+  font-size: clamp(36px, 4vw, 56px);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--text-d);
+}
+
+.jets-title em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.jets-intro-text {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.75;
+  color: var(--text-muted-d);
+}
+
+.jets-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.jet-card {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.jet-photos {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.jet-photo-main {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.jet-photos-secondary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+}
+
+.jet-photos-secondary img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.jet-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.jet-name {
+  font-family: var(--serif);
+  font-size: clamp(22px, 2.5vw, 30px);
+  font-weight: 400;
+  color: var(--text-d);
+  line-height: 1.2;
+}
+
+.jet-body {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--text-muted-d);
+}
+
+/* ────────────────────────────────
    RESPONSIVE
 ──────────────────────────────── */
 @media (max-width: 1024px) {
@@ -978,6 +1081,17 @@ a { text-decoration: none; }
   .timeline-item {
     grid-template-columns: 160px 1fr;
     gap: 32px;
+  }
+
+  .jets-header {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  .jets-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
   }
 }
 
