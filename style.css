@@ -455,6 +455,12 @@ a { text-decoration: none; }
   border-color: var(--accent);
 }
 
+.pillar-icon {
+  color: var(--accent);
+  opacity: 0.85;
+  flex-shrink: 0;
+}
+
 .pillar-num {
   font-family: var(--sans);
   font-size: 11px;
