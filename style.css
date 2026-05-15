@@ -612,7 +612,7 @@ a { text-decoration: none; }
 ──────────────────────────────── */
 .case-study-visual {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 3fr 2fr;
   gap: 0;
   align-items: start;
 }
@@ -622,7 +622,7 @@ a { text-decoration: none; }
 }
 
 .case-study-visual--img-wide {
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 2fr 3fr;
 }
 
 .case-study-visual--reverse > * {
