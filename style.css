@@ -1054,63 +1054,20 @@ a { text-decoration: none; }
 .stat:nth-child(5) { transition-delay: 0.32s; }
 .stat:nth-child(6) { transition-delay: 0.40s; }
 
-/* ── Headshot corner brackets ── */
+/* ── Headshot depth shape ── */
 .headshot-frame {
   position: relative;
   display: block;
 }
 
-.bracket {
+.headshot-bg-shape {
   position: absolute;
-  width: 32px;
-  height: 32px;
-  pointer-events: none;
-}
-
-.bracket--tl { top: -10px;    left: -10px;  }
-.bracket--tr { top: -10px;    right: -10px; }
-.bracket--bl { bottom: -10px; left: -10px;  }
-.bracket--br { bottom: -10px; right: -10px; }
-
-/* Horizontal arm */
-.bracket::before {
-  content: '';
-  position: absolute;
+  inset: 0;
   background: #7d9e7e;
-  height: 2px;
-  width: 0;
-  transition: width 0.55s cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
+  transform: translate(14px, 14px);
+  z-index: 0;
+  opacity: 0.35;
 }
-
-/* Vertical arm */
-.bracket::after {
-  content: '';
-  position: absolute;
-  background: #7d9e7e;
-  width: 2px;
-  height: 0;
-  transition: height 0.55s cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
-}
-
-/* TL — arms extend right + down */
-.bracket--tl::before { top: 0;    left: 0; }
-.bracket--tl::after  { top: 0;    left: 0; }
-
-/* TR — arms extend left + down */
-.bracket--tr::before { top: 0;    right: 0; }
-.bracket--tr::after  { top: 0;    right: 0; }
-
-/* BL — arms extend right + up */
-.bracket--bl::before { bottom: 0; left: 0; }
-.bracket--bl::after  { bottom: 0; left: 0; }
-
-/* BR — arms extend left + up */
-.bracket--br::before { bottom: 0; right: 0; }
-.bracket--br::after  { bottom: 0; right: 0; }
-
-/* Animate in when parent becomes visible */
-.headshot-slot.visible .bracket::before { width: 32px; }
-.headshot-slot.visible .bracket::after  { height: 32px; }
 
 /* ────────────────────────────────
    JETS
