@@ -1329,7 +1329,7 @@ a { text-decoration: none; }
 
 /* ── Jet Video ── */
 .jet-video-wrap {
-  margin-top: 12px;
+  margin-top: 4px;
   width: 100%;
   aspect-ratio: 16 / 9;
   background: #000;
