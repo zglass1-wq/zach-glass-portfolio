@@ -1322,6 +1322,11 @@ a { text-decoration: none; }
 
 /* ── End Sizzle ── */
 
+/* ── Jet eyebrow label ── */
+.eyebrow--jet {
+  margin-bottom: 16px;
+}
+
 /* ── Jet Video ── */
 .jet-video-wrap {
   margin-top: 12px;
