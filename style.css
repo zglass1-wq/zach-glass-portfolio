@@ -1095,7 +1095,7 @@ a { text-decoration: none; }
 .jet-card {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 0;
 }
 
 .jet-photos {
@@ -1324,7 +1324,7 @@ a { text-decoration: none; }
 
 /* ── Jet eyebrow label ── */
 .eyebrow--jet {
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 /* ── Jet Video ── */
