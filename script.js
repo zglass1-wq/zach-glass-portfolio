@@ -42,9 +42,11 @@ document.querySelectorAll('.pillar, .stat, .case-stat, .timeline-item, .award-it
 
 // ── Animated number counters ──
 function animateCounter(el) {
-  const target = parseInt(el.dataset.target, 10);
+  const target = parseFloat(el.dataset.target);
   const prefix = el.dataset.prefix || '';
   const suffix = el.dataset.suffix || '';
+  const isDecimal = el.dataset.target.includes('.');
+  const decimals = isDecimal ? (el.dataset.target.split('.')[1] || '').length : 0;
   const duration = 1800;
   const start = performance.now();
 
@@ -53,8 +55,9 @@ function animateCounter(el) {
     const progress = Math.min(elapsed / duration, 1);
     // Ease out cubic
     const eased = 1 - Math.pow(1 - progress, 3);
-    const current = Math.round(eased * target);
-    el.textContent = prefix + current.toLocaleString() + suffix;
+    const current = eased * target;
+    const display = decimals > 0 ? current.toFixed(decimals) : Math.round(current).toLocaleString();
+    el.textContent = prefix + display + suffix;
     if (progress < 1) requestAnimationFrame(update);
   }
 
